@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Fancy font */
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f8f8f8; /* White text */
+}
+
+header {
+    background-color: #555555; /* Darker header */
+    padding:3px 0; 
+    box-shadow: 0 7px 7px rgba(227, 205, 6, 0.1);
+    border-radius: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+}
+
+nav .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#newArray button, .btn-outline-primary {
+    background-color: #2a2e34;
+    color: rgb(117, 95, 95);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#newArray button:hover, .btn-outline-primary:hover {
+    background-color: #454d56;
+    transform: scale(1.1);
+}
+
+#input span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#input input {
+    vertical-align: middle;
+}
+
+.flex-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+
+.flex-item {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    border: none;
+    width: 10px;
+    margin: 0 2px; /* Add gap between bars */
+    transition: 0.3s all ease;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.flex-item:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    transform: scale(1.2); /* Scale up the bar */
+    box-shadow: 0 0 15px rgba(255, 126, 95, 0.6); /* Add shadow for a glowing effect */
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+#input {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
